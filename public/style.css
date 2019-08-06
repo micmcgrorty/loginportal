@@ -1,0 +1,88 @@
+body {
+	background: #f7f7f7;
+	font-family: Sans-serif;
+}
+
+.container {
+	background: #f7f7f7;
+	padding: 5em 0;
+}
+
+.login {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #e0e0e0;
+	border-radius: 0.4em;
+}
+
+.error {
+	display: block;
+	margin: 5px 1%;
+	background-color: red;
+	border-radius: 0.4em;
+	font-size: 0.8em;
+	transition: 2s;
+	text-align: center;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	margin: 0.5em 25%;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 0 0 0.5em;
+	width: 50%;
+	border: 1px solid #e0e0e0;
+}
+
+label {
+	margin: 0.5em 25%;
+	width: 50%;
+}
+
+.login button {
+	background: #0891c7;
+	margin-left: 25%;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	color: #e0e0e0;
+	border: 0;
+	height: 2em;
+	width: 5em;
+}
+
+.login button[disabled] {
+	background: red;
+	margin-left: 25%;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	color: #e0e0e0;
+	border: 0;
+	height: 2em;
+	width: 5em;
+}
+
+.section {
+	width: 50%;
+	height: 15em;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 0.5em;
+}
+
+.section img {
+	position: relative;
+	max-height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media (min-width: 800px) {
+	.section img {
+		top: 50%;
+		left: 0;
+		max-height: none;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+}
