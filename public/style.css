@@ -63,26 +63,11 @@ label {
 }
 
 .section {
-	width: 50%;
-	height: 15em;
-	margin: 0 auto;
-	overflow: hidden;
-	border-radius: 0.5em;
+	display: flex;
+	flex-direction: column;
 }
 
-.section img {
-	position: relative;
-	max-height: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-@media (min-width: 800px) {
-	.section img {
-		top: 50%;
-		left: 0;
-		max-height: none;
-		width: 100%;
-		transform: translateY(-50%);
-	}
+.innerSection {
+	align-self: center;
+	text-align: center;
 }
